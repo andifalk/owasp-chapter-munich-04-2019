@@ -1,0 +1,9 @@
+spring:
+  security:
+    user:
+      password: secret
+
+server:
+  port: 9090
+  servlet:
+    context-path: /server
