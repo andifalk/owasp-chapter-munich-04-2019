@@ -1,8 +1,9 @@
 pluginManagement {
-    repositories {
-        gradlePluginPortal()
-    }
+	repositories {
+		gradlePluginPortal()
+	}
 }
 rootProject.name = 'live-demos'
 
+include 'client'
 include 'resource-server'

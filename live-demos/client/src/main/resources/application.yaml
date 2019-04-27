@@ -1,0 +1,22 @@
+server:
+  port: 9090
+  servlet:
+    context-path: /hello-client
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          keycloak:
+            client-id: google-client-id
+            client-secret: google-client-secret
+            redirect-uri: {baseUrl}/login/oauth2/code/{registrationId}
+        provider:
+          keycloak:
+            authorization-uri: http://localhost:8080/auth/realms/workshop/protocol/openid-connect/auth
+            token-uri: http://localhost:8080/auth/realms/workshop/protocol/openid-connect/token
+            user-info-uri: http://localhost:8080/auth/realms/workshop/protocol/openid-connect/userinfo
+            user-name-attribute: sub
+            jwk-set-uri: http://localhost:8080/auth/realms/workshop/protocol/openid-connect/certs
+
