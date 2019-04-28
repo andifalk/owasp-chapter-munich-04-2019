@@ -1,7 +1,5 @@
 spring:
   security:
-    user:
-      password: secret
     oauth2:
       resourceserver:
         jwt:
