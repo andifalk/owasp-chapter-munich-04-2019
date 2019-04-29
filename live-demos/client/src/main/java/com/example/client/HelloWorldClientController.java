@@ -28,7 +28,7 @@ public class HelloWorldClientController {
   Mono<String> hellowWorldRequestUser(Model model) {
     return webClient
         .get()
-        .uri("http://localhost:9091/server//hello-user")
+        .uri("http://localhost:9091/hello-server/hello-user")
         .retrieve()
         .onStatus(s -> s.equals(HttpStatus.FORBIDDEN), c -> Mono.just(new AccessDeniedException("You are not authorized!!")))
         .onStatus(HttpStatus::is5xxServerError, c -> Mono.just(new IllegalStateException(c.statusCode().getReasonPhrase())))
@@ -44,7 +44,7 @@ public class HelloWorldClientController {
   Mono<String> hellowWorldRequestAdmin(Model model) {
     return webClient
             .get()
-            .uri("http://localhost:9091/server//hello-admin")
+            .uri("http://localhost:9091/hello-server/hello-admin")
             .retrieve()
             .onStatus(s -> s.equals(HttpStatus.FORBIDDEN), c -> Mono.just(new AccessDeniedException("You are not authorized!!")))
             .onStatus(HttpStatus::is5xxServerError, c -> Mono.just(new IllegalStateException(c.statusCode().getReasonPhrase())))

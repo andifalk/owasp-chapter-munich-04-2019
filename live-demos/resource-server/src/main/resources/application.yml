@@ -8,5 +8,5 @@ spring:
 server:
   port: 9091
   servlet:
-    context-path: /server
+    context-path: /hello-server
 

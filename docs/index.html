@@ -440,6 +440,19 @@
                         <br><small>Source: Torsten Lodderstedt and Daniel Fett</small>
                     </section>
                     <section>
+                        <h3>OAuth 2.0 for Browser-Based Apps</h3>
+                        <p>David Waite (PingFederate)</p>
+                        <img src="images/oauth_browser_apps_d_waite.jpeg" class="plain" width="50%">
+                        <p><small><a href="https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps">OAuth 2.0 for Browser-Based Apps</a></small></p>
+                    </section>
+                    <section>
+                        <h3>OAuth 2.0 for Browser-Based Apps</h3>
+                        <p>Content-Security Policy</p>
+                        <p>Use a unique redirect URI</p>
+                        <p>NOT issue refresh tokens</p>
+                        <p><small><a href="https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps">OAuth 2.0 for Browser-Based Apps</a></small></p>
+                    </section>
+                    <section>
                         <h3>Other Known OAuth 2.0 Attacks</h3>
                         <ul>
                             <li>Lack of CSRF protection</li>
@@ -495,6 +508,7 @@
                         <h2>Proof Key for Code Exchange by OAuth Public Clients (PKCE)</h2>
                         <p>(&ldquo;Pixy&rdquo;)</p>
                         <p>Mitigates authorization code attacks</p>
+                        <p>Mitigates token leakage in SPAs</p>
                         <p>
                             <small>
                                 <a href="https://tools.ietf.org/html/rfc7636">Proof Key for Code Exchange by OAuth Public Clients</a>
@@ -527,12 +541,46 @@
                         <img src="images/manico_xss_local_storage.jpeg" class="plain" width="80%">
                     </section>
                     <section>
-                        <h3>New Recommendations & Drafts</h3>
-                        <p><a href="https://tools.ietf.org/html/draft-ietf-oauth-security-topics">OAuth 2.0 Security Best Current Practice</a></p>
-                        <p><a href="https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps">OAuth 2.0 for Browser-Based Apps</a></p>
-                        <p><a href="https://tools.ietf.org/html/draft-ietf-oauth-mtls">OAuth 2.0 Mutual TLS Client Authentication and Certificate-Bound
-                            Access Tokens</a></p>
-                        <p><a href="https://tools.ietf.org/html/draft-bertocci-oauth-access-token-jwt">JSON Web Token (JWT) Profile for OAuth 2.0 Access Tokens</a></p>
+                        <h3>OAuth 2 Access Token JWT Profile</h3>
+                        <p>Vittorio Bertocci (Auth0)</p>
+                        <img src="images/vittorio_jwt.jpeg" class="plain" width="60%">
+                        <p>
+                            <small>
+                                <a href="https://tools.ietf.org/html/draft-ietf-oauth-access-token-jwt">JSON Web Token (JWT) Profile for OAuth 2.0 Access Tokens</a>
+                            </small>
+                        </p>
+                    </section>
+                    <section>
+                        <h3>OAuth 2 Access Token JWT Profile</h3>
+                        <p>Required claims: iss, exp, aud, sub, client_id</p>
+                        <p>Consider privacy restrictions for identity claims</p>
+                        <p>Authorization claims according to SCIM Core (RFC7643):</p>
+                        <ul>
+                            <li>Groups</li>
+                            <li>Entitlements</li>
+                            <li>Roles</li>
+                        </ul>
+                        <p>
+                            <small>
+                                <a href="https://tools.ietf.org/pdf/rfc7643.pdf">System for Cross-domain Identity Management (SCIM)</a>
+                            </small>
+                        </p>
+                    </section>
+                    <section>
+                        <h3>Token Binding</h3>
+                        <p style="text-decoration: line-through"><a href="https://tools.ietf.org/html/rfc8471">RFC8471: The Token Binding Protocol Version 1.0</a></p>
+                        <p style="text-decoration: line-through"><a href="https://tools.ietf.org/html/rfc8472">RFC8472: (TLS) Extension for Token Binding Protocol Negotiation</a></p>
+                        <p style="text-decoration: line-through"><a href="https://tools.ietf.org/html/rfc8473">RFC8473: Token Binding over HTTP</a></p>
+                        <p><a href="https://tools.ietf.org/html/draft-ietf-oauth-mtls">OAuth 2.0 Mutual TLS Client Authentication and Certificate-Bound Access Tokens</a></p>
+                        <p>
+                            <small>
+                                <a href="https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/OkdLUyYmY1E/w2ESAeshBgAJ">Google - Intent to Remove: Token Binding</a>
+                            </small>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Further Internet-Drafts for OAuth 2</h2>
+                        <p><a href="https://tools.ietf.org/id/draft-*-oauth-?maxhits=100&key=date&dir=desc">List of OAuth 2 Internet-Drafts (by date)</a></p>
                     </section>
                 </section>
 
@@ -543,14 +591,19 @@
                         <h2>Demo Time</h2>
                         <h3>OAuth 2.0 & OpenID Connect 1.0</h3>
                         <h3>With Spring Security 5</h3>
+                        <img src="images/spring-logo.png" class="plain">
                     </section>
                     <section>
                         <h2>&ldquo;Legacy&rdquo; Spring Security OAuth 2 Stack</h2>
                         <img src="images/spring_security_old.png" class="plain">
                     </section>
                     <section>
-                        <h2>&ldquo;New&rdquo; Spring Security OAuth 2 Stack</h2>
+                        <h2>&ldquo;New&rdquo; Spring Security <br> OAuth 2 Stack</h2>
                         <img src="images/spring_security_new.png" class="plain">
+                    </section>
+                    <section>
+                        <h2>Demo application</h2>
+                        <img src="images/demo-architecture.png" class="plain" width="100%">
                     </section>
                     <section>
                         <h2>What's new in</h2>
@@ -595,7 +648,22 @@
                         <h2>Online References</h2>
                         <small>
                             <ul>
-                                <li><a href="https://github.com/OWASP/Top10">OWASP Top 10 2017 (https://github.com/OWASP/Top10)</a></li>
+                                <li><a href="https://tools.ietf.org/html/rfc6749">RFC 6749: The OAuth 2.0 Authorization Framework</a></li>
+                                <li><a href="https://tools.ietf.org/html/rfc6750">RFC 6750: OAuth 2.0 Bearer Token Usage</a></li>
+                                <li><a href="https://tools.ietf.org/html/rfc6819">RFC 6819: OAuth 2.0 Threat Model and Security Considerations</a></li>
+                                <li><a href="http://tools.ietf.org/html/rfc7636">RFC 7636: Proof Key for Code Exchange (&ldquo;Pixy&rdquo;)</a></li>
+                                <li><a href="https://openid.net/specs/openid-connect-core-1_0.html">OpenID Connect Core 1.0</a></li>
+                                <li><a href="https://openid.net/specs/openid-connect-registration-1_0.html">OpenID Connect Dynamic Client Registration 1.0</a></li>
+                                <li><a href="https://openid.net/specs/openid-connect-discovery-1_0.html">OpenID Connect Discovery 1.0</a></li>
+                                <li><a href="https://tools.ietf.org/html/rfc7519">RFC 7519: JSON Web Token (JWT)</a></li>
+                                <li><a href="https://tools.ietf.org/html/draft-ietf-oauth-jwt-bcp">JSON Web Token Best Current Practices</a></li>
+                                <li><a href="https://sec.uni-stuttgart.de/events/osw2019">4. OAuth Security Workshop 2019 event web page</a></li>
+                                <li><a href="https://medium.com/oauth-2/why-you-should-stop-using-the-oauth-implicit-grant-2436ced1c926">Why you should stop using the OAuth implicit grant</a></li>
+                                <li><a href="https://tools.ietf.org/html/draft-ietf-oauth-security-topics">OAuth 2.0 Security Best Current Practice</a></li>
+                                <li><a href="https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-01">OAuth 2.0 for Browser-Based Apps</a></li>
+                                <li><a href="https://tools.ietf.org/html/draft-ietf-oauth-mtls">OAuth 2.0 Mutual TLS Client Authentication and Certificate-Bound Access Tokens</a></li>
+                                <li><a href="https://tools.ietf.org/html/draft-ietf-oauth-access-token-jwt">JSON Web Token (JWT) Profile for OAuth 2.0 Access Tokens</a></li>
+                                <li><a href="https://spring.io/projects/spring-security">Spring Security</a></li>
                             </ul>
                             <p>All images used are from <a href="https://pixabay.com/">Pixabay</a> and are published under <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">Creative Commons CC0 license.</a></p>
                             All used logos are trademarks of respective companies
