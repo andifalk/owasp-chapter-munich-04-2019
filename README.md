@@ -14,6 +14,8 @@ This talk contains the following parts:
 
 [Presentation Slides (HTML5)](https://andifalk.github.io/owasp-chapter-munich-04-2019)
 
+[Presentation Slides (PDF)](https://github.com/andifalk/owasp-chapter-munich-04-2019/raw/master/OAuth_2_and_OpenID_Connect_OWASP%20Munich.pdf)
+
 ## Live Code Demo
 
 [Live Code Demo](live-demos)
