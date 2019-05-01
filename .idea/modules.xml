@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/live-demos.iml" filepath="$PROJECT_DIR$/.idea/modules/live-demos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/auth-code-demo/live-demos.auth-code-demo.iml" filepath="$PROJECT_DIR$/.idea/modules/auth-code-demo/live-demos.auth-code-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/auth-code-demo/live-demos.auth-code-demo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/auth-code-demo/live-demos.auth-code-demo.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/auth-code-demo/live-demos.auth-code-demo.test.iml" filepath="$PROJECT_DIR$/.idea/modules/auth-code-demo/live-demos.auth-code-demo.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/client/live-demos.client.iml" filepath="$PROJECT_DIR$/.idea/modules/client/live-demos.client.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/client/live-demos.client.main.iml" filepath="$PROJECT_DIR$/.idea/modules/client/live-demos.client.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/client/live-demos.client.test.iml" filepath="$PROJECT_DIR$/.idea/modules/client/live-demos.client.test.iml" />
